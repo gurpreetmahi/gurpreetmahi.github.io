@@ -34,6 +34,7 @@ jobs:
           node-version: 18
       - run : ls
       - run : cd ./_site
+        shell: bash
       - run : ls
       - run : npm install
       - run : npm run build
