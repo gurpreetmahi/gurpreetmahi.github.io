@@ -35,6 +35,8 @@ jobs:
       - run : npm -v
       - run : npm install --prefix ./_site
       - run : npm run build --prefix ./_site
-      - run : ls
+      - name: list dir 
+        shell: bash
+        run: ls 
 
   
