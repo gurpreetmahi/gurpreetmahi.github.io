@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: 18
       - run : cd _site
+      - run : ls
       - run : npm install
       - run : npm run build
       - name: Upload artifact
