@@ -32,12 +32,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run : ls
-      - run : cd ./_site
-        shell: bash
-      - run : ls
-      - run : npm install
-      - run : npm run build
+      - run : ./_site/npm install
+      - run : ./_site/npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
